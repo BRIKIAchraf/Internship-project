@@ -1,0 +1,10 @@
+  version: '3'
+  services:
+    microservice:
+      image: zk-api-omegup:0.0.1.Release
+      ports:
+        - "3000:3000"
+      volumes:
+        - /media/achraf/D/zk-api/app:/app
+        - ./id_rsa.pub:/root/.ssh/authorized_keys
+      # Add other necessary configurations for your microservice
